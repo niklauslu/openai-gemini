@@ -143,8 +143,8 @@ async function handleCompletions (req, apiKey) {
   switch(true) {
     case typeof req.model !== "string":
       break;
-    case req.model.startsWith("gpt-4o")
-      model = "gemini-2.0-flash-exp"
+    case req.model.startsWith("gpt-4o"):
+      model = "gemini-2.0-flash-exp";
       break;
     case req.model.startsWith("models/"):
       model = req.model.substring(7);
